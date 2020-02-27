@@ -45,7 +45,7 @@ class Creator extends React.Component {
 
   handleAlert = () => {
     if(window.confirm('Do you really want to leave?')){
-      this.handleCancel;
+      this.handleCancel();
       console.log('this', this);
     }
   }
