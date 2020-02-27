@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.scss';
-import List from '../List/List.js';
+import List from '../List/ListContainer.js';
 // import {settings} from '../../data/dataStore'; // all comments - this is my attempt from module 15. - to build additional list
 // import Creator from '../Creator/Creator.js';
 import PropTypes from 'prop-types';
