@@ -1,19 +1,25 @@
 import React from 'react';
 import styles from './App.scss';
 import List from '../List/List.js';
-import {pageContents, listData, settings} from '../../data/dataStore';
-import Creator from '../Creator/Creator.js';
+// import {settings} from '../../data/dataStore'; // all comments - this is my attempt from module 15. - to build additional list
+// import Creator from '../Creator/Creator.js';
 import PropTypes from 'prop-types';
 
 class App extends React.Component {
+  /*
   state = {
     listData: listData,
   }
+  */
 
   static propTypes = {
     listData: PropTypes.array,
+    title: PropTypes.node,
+    subtitle: PropTypes.node,
+    lists: PropTypes.array,
   }
 
+  /*
   addList(title){
     this.setState(state => (
       {
@@ -30,18 +36,27 @@ class App extends React.Component {
       }
     ));
   }
+  */
 
   render() {
+    const {title, subtitle, lists} = this.props;
     return (
       <main className={styles.component}>
-        <h1 className={styles.title}>{pageContents.title}</h1>
-        <h2 className={styles.subtitle}>{pageContents.subtitle}</h2>
-        {this.state.listData.map(list => (
+        <h1 className={styles.title}>{title}</h1>
+        <h2 className={styles.subtitle}>{subtitle}</h2>
+        {lists.map(listData => (
+          <List key={listData.id} {...listData} />
+        ))}
+        {/*
+          {this.state.listData.map(list => (
           <List key={list.key} {...list} />
         ))}
-        <div>
+        */}
+        {/*
+          <div>
           <Creator text={settings.listCreatorText} action={title => this.addList(title)}/>
         </div>
+        */}
       </main>
     );
   }
