@@ -7,6 +7,10 @@ export const settings = {
     buttonCancel: 'Cancel',
     defaultText: 'Add new item',
   },
+  search: {
+    defaultText: 'Search...',
+    icon: 'search',
+  },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
 };
@@ -16,7 +20,7 @@ export const pageContents = {
   subtitle: 'A simple to-do app, with lists, columns and cards',
 };
 
-export const listData = [{
+export const listData = {
   key: 0,
   title: 'Things to do <sup>soon!</sup>',
   description: 'Interesting things I want to check out!',
@@ -68,7 +72,7 @@ export const listData = [{
       ],
     },
   ],
-}];
+};
 
 const lists = [
   {
