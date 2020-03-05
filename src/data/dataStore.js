@@ -13,6 +13,9 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  header: {
+    icon: 'cat',
+  },
 };
 
 export const pageContents = {
@@ -148,6 +151,21 @@ const initialStoreData = {
   lists: [...lists],
   columns: [...columns],
   cards: [...cards],
+};
+
+export const subpageContents = {
+  info: {
+    title: 'INFORMATIONS',
+    image: 'https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?cs=srgb&dl=blank-composition-desk-display-317355.jpg&fm=jpg',
+    subtitle: 'Info',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  },
+  faq: {
+    title: '',
+    image: 'https://images.pexels.com/photos/221164/pexels-photo-221164.jpeg?cs=srgb&dl=black-and-white-business-career-close-up-221164.jpg&fm=jpg',
+    subtitle: 'Ultimate Question',
+    content: 'Answer to the Ultimate Question of Life, the Universe, and Everything <span className = {styles.number}> is 42!!</span>',
+  },
 };
 
 export default initialStoreData;
