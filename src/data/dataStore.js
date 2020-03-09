@@ -176,7 +176,7 @@ export const subpageContents = {
     title: '',
     image: 'https://images.pexels.com/photos/221164/pexels-photo-221164.jpeg?cs=srgb&dl=black-and-white-business-career-close-up-221164.jpg&fm=jpg',
     subtitle: 'Ultimate Question',
-    content: 'Answer to the Ultimate Question of Life, the Universe, and Everything <span className = {styles.number}> is 42!!</span>',
+    content: 'Answer to the Ultimate Question of Life, the Universe, and Everything is 42!!',
   },
 };
 
