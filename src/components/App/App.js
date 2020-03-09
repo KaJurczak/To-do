@@ -9,7 +9,7 @@ import styles from './App.scss';
 import List from '../List/ListContainer';
 // import Search from '../Search/Search';
 // import SearchResults from '../SearchResults/SearchResults';
-import SearchResultsContainer from '../SearchResults/SearchResultsContainer';
+import SearchResults from '../SearchResults/SearchResultsContainer';
 
 const App = () => (
   <BrowserRouter>
@@ -24,7 +24,7 @@ const App = () => (
         <Route exact path='/info' component={Info} />
         <Route exact path='/faq' component={FAQ} />
         <Route exact path="/list/:id" component={List} />
-        <Route exact path="/search/:id" component={SearchResultsContainer} />
+        <Route exact path="/search/:id" component={SearchResults} />
       </AnimatedSwitch>
     </MainLayout>
   </BrowserRouter>
