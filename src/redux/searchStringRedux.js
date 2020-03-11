@@ -12,7 +12,8 @@ export const CHANGE_CARD = createActionName('CHANGE_CARD');
 
 // action creators
 export const createAction_changeSearchString = payload => ({
-  payload, type: CHANGE_CARD,
+  payload, 
+  type: CHANGE_CARD,
 });
 
 // reducer

@@ -37,6 +37,9 @@ class Search extends React.Component {
   handleOK(){
     // this.props.changeSearchString(this.state.value);
     this.props.history.push(`/search/${this.state.value}`);
+    console.log('this.props.history is', this.props.history);
+    console.log('this.state.value', this.state.value);
+    console.log('this.props.searchString', this.props.searchString);
   }
 
   componentDidUpdate(prevProps){
@@ -48,6 +51,7 @@ class Search extends React.Component {
   render() {
     const {text, countVisible, countAll} = this.props;
     const {value} = this.state;
+    {console.log('this.state', this.state);}
     const {icon} = settings.search;
     return (
       <Container>

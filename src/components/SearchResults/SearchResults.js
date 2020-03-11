@@ -22,6 +22,10 @@ class SearchResults extends React.Component {
     console.log('this.props:', this.props);
   }
 
+  checkState(){
+    console.log('this.state:', this.state);
+  }
+
   render() {
     const {cards} = this.props;
     return (
@@ -31,6 +35,8 @@ class SearchResults extends React.Component {
             {/* <span className={styles.icon}><Icon name={icon} /></span>
             {title} */}
             There is result of searching
+            {this.checkProps()}
+            {this.checkState()}
           </h3>
           <div>
             {cards.map(cardData => (

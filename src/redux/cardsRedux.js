@@ -5,8 +5,9 @@ export const getCardsForColumn = ({cards}, columnId) => cards.filter(card => car
   // && new RegExp(searchString, 'i').test(card.title)
 );
 
-export const getCardsFromSearch = ({cards, searchString}) => cards.filter(card => new RegExp(searchString, 'i').test(card.title),
-  // console.log('...'),
+export const getCardsFromSearch = ({cards}, props) => cards.filter(card => new RegExp(props, 'i').test(card.title),
+  console.log('cards, searchString', {cards}),
+  console.log('props', props),
 );
 
 // action name creator
