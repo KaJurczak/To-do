@@ -1,6 +1,8 @@
 @import '../../styles/settings.scss';
 
-.number {
-  font-size: ($base-size * 5);
-  color: $color-warning;
+.component {
+  span {
+    font-size: ($base-size * 5);
+    color: $color-warning;
+  }
 }
